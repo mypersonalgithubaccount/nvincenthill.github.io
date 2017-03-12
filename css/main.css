@@ -94,7 +94,7 @@ body {
 .header-container,
 .footer-container,
 .main aside {
-    background: #a9cce2;
+    background: #868686;
 }
 
 .title {
@@ -126,7 +126,7 @@ body {
 
 .subtitle {
     font-size: 4.5vmin !important;
-    color: #6da9cf;
+    color: #868686;
 }
 
 .title-countries {
