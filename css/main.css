@@ -1,0 +1,684 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #000000;
+    font-size: 1em;
+    line-height: 1.4;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+::-moz-selection {
+    background: #000000;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+.subtitle-text {
+    display: none;
+}
+
+body {
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+}
+
+.wrapper.clearfix {
+    width: 75%;
+    margin: auto;
+}
+
+
+/* ===================
+    ALL: Custom Theme
+   =================== */
+
+.header-container {
+    height: auto;
+}
+
+.footer-container,
+.main aside {
+    font-family: 'bebas_neueregular', Fallback, sans-serif;
+    font-size: 40px;
+    font-size: 5.9vmin;
+    text-align: center;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #a9cce2;
+}
+
+.title {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-family: 'bebas_neueregular', Fallback, sans-serif;
+    font-size: 60px;
+    font-size: 10vmin;
+    font-weight: 500;
+    font-kerning: normal;
+    color: #000000;
+    opacity: .87;
+}
+
+.title-project {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-family: 'bebas_neueregular', Fallback, sans-serif;
+    font-size: 60px;
+    font-size: 6.0vmin;
+    font-weight: 500;
+    font-kerning: normal;
+    color: #000000;
+    opacity: .87;
+}
+
+.subtitle {
+    font-size: 4.5vmin !important;
+    color: #6da9cf;
+}
+
+.title-countries {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-family: 'bebas_neueregular', Fallback, sans-serif;
+    font-size: 60px;
+    font-size: 6.0vmin;
+    font-weight: 500;
+    font-kerning: normal;
+    color: #000000;
+    opacity: .87;
+}
+
+.subtitle.left {
+    position: absolute;
+    float: left;
+    top: 15px;
+    left: 20px;
+    font-size: 30px;
+    color: #000000;
+    opacity: .54;
+}
+
+.subtitle.right {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: #000000;
+    opacity: .54;
+}
+
+.subtitle-text {
+    display: none;
+}
+
+.subtitle > a {
+    display: block;
+    float: right;
+    font-family: 'bebas_neueregular', Fallback, sans-serif;
+    font-size: 30px;
+    color: #000000;
+    opacity: .54;
+    text-decoration: none;
+}
+
+.glyphicon {
+    vertical-align: middle;
+    top: -1px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: .7em;
+    color: black;
+    opacity: .54;
+}
+
+.mainpic-container {}
+
+#mainpic {
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-image: url('/img/DSC_0724.jpg');
+    background-repeat: no-repeat;
+}
+
+.projects {
+    display: block;
+    height: auto;
+}
+.project-wrapper:hover > .project-link:hover, .project-wrapper:hover > .icon-link:hover {
+    opacity: 1;
+}
+    
+.project-wrapper:hover > .project-link {
+    opacity: 0.25;
+}
+
+.icon-link {
+    opacity: 0.25;
+}
+
+.project-wrapper {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.project-link {
+    display: inline-block;
+    position: relative;
+    margin: 4px;
+    height: 250px;
+    width: 250px;
+    transition: opacity ease-in-out 0.1s;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
+    color: none;
+    background-color: white;
+}
+
+.project-img {
+    display: block;
+    height: 100%;
+    border: none;
+    border-radius: 0 !important;
+}
+
+
+.project-vid {
+    display: block;
+    height: 250px;
+    width: 250px;
+    border: none;
+    border-radius: 0;
+}
+
+.video-cover {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+
+.video {
+}
+
+
+.links-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 10px;
+    height: inherit;
+}
+
+.icon-link {
+    display: inline-block;
+    margin: 0px;
+    height: 45px;
+    width: 45px;
+    transition: opacity ease-in-out 0.1s;
+    color: none;
+}
+
+IMG.countries {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    /* ie8 */
+}
+
+.main.wrapper.clearfix {
+    min-width: 300px;
+    width: 100%;
+    height: 900px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+    top: -10px;
+    left: 1%;
+}
+
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 10px 0;
+}
+
+.main article h1 {
+    font-size: 1em;
+    font-size: 1em;
+}
+
+.main aside {
+    color: white;
+    padding: 100px 5% 100px;
+}
+
+.footer-container footer {
+    padding: 1px 0;
+}
+
+.footer-container footer > h1 {
+    color: black !important;
+}
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+    padding-top: 10px;
+}
+
+.carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    margin-top: 20px;
+    margin-top: 3vh;
+}
+
+.carousel-inner {
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    display: block;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 50;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+}
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+    .main.wrapper.clearfix {
+        min-width: 400px;
+        width: 100%;
+    }
+    nav a {
+        float: left;
+        width: 27%;
+        margin: 0 1.7%;
+        padding: 25px 2%;
+        margin-bottom: 0;
+    }
+    nav li:first-child a {
+        margin-left: 0;
+    }
+    nav li:last-child a {
+        margin-right: 0;
+    }
+    nav ul li {
+        display: inline;
+    }
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        float: right;
+        width: 38%;
+    }
+    .projects {
+        display: block;
+    }
+    .main.wrapper.clearfix {
+        min-width: 400px;
+        width: 70%;
+    }
+    .main article {
+        float: left;
+        width: 70%;
+    }
+    .main aside {
+        float: right;
+        width: 30%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .projects {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .projects {
+        display: block;
+    }
+    .subtitle-text {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .projects {
+        display: block;
+    }
+    .subtitle-text {
+        display: inline;
+    }
+    .main.wrapper.clearfix {
+        min-width: 400px;
+        width: 780px;
+    }
+    .wrapper {
+        width: 1026px;
+        margin: 0 auto;
+    }
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Mobile webm styles
+   ========================================================================== */
+
+/* This used to work for parent element of button divs */
+
+/* But it is not enough now, below dont hide play button parent div */
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::--webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
