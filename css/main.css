@@ -93,6 +93,7 @@ body {
 
 .header-container,
 .footer-container,
+
 .main aside {
     background: #868686;
 }
@@ -107,7 +108,7 @@ body {
     font-size: 10vmin;
     font-weight: 500;
     font-kerning: normal;
-    color: #000000;
+    color: #ffffff;
     opacity: .87;
 }
 
@@ -120,7 +121,7 @@ body {
     font-size: 6.0vmin;
     font-weight: 500;
     font-kerning: normal;
-    color: #000000;
+    color: #XXX;
     opacity: .87;
 }
 
@@ -352,7 +353,7 @@ nav a:hover {
 }
 
 .footer-container footer > h1 {
-    color: black !important;
+    color: white !important;
 }
 
 
