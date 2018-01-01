@@ -8,7 +8,7 @@ let resolution = 5;
 let canvas;
 
 function setup() {
-    var canvas = createCanvas(400, 400);
+    let canvas = createCanvas(400, 400);
     canvas.parent('sketch-holder');
     cols = width / resolution;
     rows = height / resolution;
@@ -27,6 +27,10 @@ function make2DArray(cols, rows) {
     arr[i] = new Array(rows);
   }
   return arr;
+}
+
+function mousePressed() {
+    setup();
 }
 
 function draw() {

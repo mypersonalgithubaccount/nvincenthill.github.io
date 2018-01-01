@@ -714,7 +714,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .construction {
     opacity: .8;
     filter: invert(100%);
-    padding-top: 2vw;
+    padding-top: 1vw;
     justify-content: center;
     align-items: center;
     display: flex;
