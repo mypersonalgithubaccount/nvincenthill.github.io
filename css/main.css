@@ -113,6 +113,7 @@ body {
     font-kerning: normal;
     color: white;
     opacity: 1;
+    padding-top: 1vw;
 }
 
 .title-project {
@@ -220,7 +221,7 @@ body {
 }
 
 .icon-link {
-    opacity: 1;
+    opacity: .8;
     filter: invert(100%);
 }
 
@@ -711,7 +712,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 .construction {
-    opacity: 1;
+    opacity: .8;
     filter: invert(100%);
     padding-top: 2vw;
     justify-content: center;
