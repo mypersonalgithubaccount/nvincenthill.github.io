@@ -16,7 +16,7 @@ let canvas;
 
 function setup() {
 
-var canvas = createCanvas(600, 400);
+var canvas = createCanvas(400, 400);
 canvas.parent('sketch-holder');
     
   cols = width / resolution;
@@ -41,7 +41,14 @@ function make2DArray(cols, rows) {
 
 function draw() {
   background(0);
-
+    let r = 50;
+    strokeWeight(0);
+    col2 = map(mouseX,0,height,255,0);
+    ellipse(mouseX,mouseY,r,r);
+    col = map(mouseX,0,height,0,255);
+    r = map(mouseY,0,width,0,600);
+    
+    
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
       let x = i * resolution;

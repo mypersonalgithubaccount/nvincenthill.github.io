@@ -67,6 +67,7 @@ textarea {
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    background-color: black;
 }
 
 .wrapper.clearfix {
@@ -97,7 +98,7 @@ body {
 .footer-container,
 
 .main aside {
-    background: #868686;
+    background: black;
 }
 
 .title {
@@ -110,8 +111,8 @@ body {
     font-size: 10vmin;
     font-weight: 500;
     font-kerning: normal;
-    color: #ffffff;
-    opacity: .87;
+    color: white;
+    opacity: 1;
 }
 
 .title-project {
@@ -120,16 +121,18 @@ body {
     margin: auto;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
     font-size: 60px;
-    font-size: 6.0vmin;
+    font-size: 8vmin;
     font-weight: 500;
     font-kerning: normal;
-    color: #XXX;
+    color: yellow;
     opacity: .87;
+    padding-top: 2vw;
 }
 
 .subtitle {
-    font-size: 5vmin !important;
-    color: #868686;
+    font-size: 6vmin !important;
+    color: white;
+    opacity: .8;
 }
 
 .title-countries {
@@ -209,6 +212,7 @@ body {
 }
 .project-wrapper:hover > .project-link:hover, .project-wrapper:hover > .icon-link:hover {
     opacity: 1;
+    filter: invert(100%);
 }
     
 .project-wrapper:hover > .project-link {
@@ -216,13 +220,15 @@ body {
 }
 
 .icon-link {
-    opacity: 0.25;
+    opacity: 1;
+    filter: invert(100%);
 }
 
 .icon-link:hover {
     opacity: 1;
     transform: translateY(-2px);
     transform: scale(1.3);
+    filter: invert(100%);
 }
 
 .project-wrapper {
@@ -285,6 +291,7 @@ body {
     width: 45px;
     transition: opacity ease-in-out 0.1s;
     color: none;
+    filter: invert(100%);
 }
 
 IMG.countries {
@@ -701,4 +708,15 @@ now override the 3.3 new styles for modern browsers & apply opacity
     align-items: center;
     padding-bottom: 2vw;
     padding-top: 2vw;
+}
+
+.construction {
+    opacity: 1;
+    filter: invert(100%);
+    padding-top: 2vw;
+    padding-bottom: 2vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
 }
