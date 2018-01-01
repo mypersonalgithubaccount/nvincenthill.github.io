@@ -714,7 +714,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
     opacity: 1;
     filter: invert(100%);
     padding-top: 2vw;
-    padding-bottom: 2vh;
     justify-content: center;
     align-items: center;
     display: flex;
