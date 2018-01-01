@@ -1,18 +1,34 @@
-// Plays webm video on hover
-
-/* $(".video-cover").hover( hoverVideo, hideVideo );
-
-function hoverVideo(e) {
-    this.nextElementSibling.play();
-}
-
-function hideVideo(e) {
-    this.nextElementSibling.currentTime = 0;
-    this.nextElementSibling.pause();
-} */
 
 // Daniel Shiffman
 // http://codingtra.in
+
+let space;
+let cols;
+let rows;
+let resolution = 5;
+let canvas;
+//
+//function centerCanvas() {
+//  var canvasx = (windowWidth - width) / 2;
+//  var canvasy = (windowHeight - height) / 2;
+//  canvas.position(canvasx, canvasy);
+//}
+
+function setup() {
+
+var canvas = createCanvas(600, 400);
+canvas.parent('sketch-holder');
+    
+  cols = width / resolution;
+  rows = height / resolution;
+
+  space = make2DArray(cols, rows);
+  for (let i = 0; i < cols; i++) {
+    for (let j = 0; j < rows; j++) {
+      space[i][j] = floor(random(2));
+    }
+  }
+}
 
 function make2DArray(cols, rows) {
   let arr = new Array(cols);
@@ -22,23 +38,6 @@ function make2DArray(cols, rows) {
   return arr;
 }
 
-let grid;
-let cols;
-let rows;
-let resolution = 5;
-
-function setup() {
-  createCanvas(600, 400);
-  cols = width / resolution;
-  rows = height / resolution;
-
-  grid = make2DArray(cols, rows);
-  for (let i = 0; i < cols; i++) {
-    for (let j = 0; j < rows; j++) {
-      grid[i][j] = floor(random(2));
-    }
-  }
-}
 
 function draw() {
   background(0);
@@ -47,7 +46,7 @@ function draw() {
     for (let j = 0; j < rows; j++) {
       let x = i * resolution;
       let y = j * resolution;
-      if (grid[i][j] == 1) {
+      if (space[i][j] == 1) {
         fill(255);
         stroke(0);
         rect(x, y, resolution - 1, resolution - 1);
@@ -57,13 +56,13 @@ function draw() {
 
   let next = make2DArray(cols, rows);
 
-  // Compute next based on grid
+  // Compute next based on space
   for (let i = 0; i < cols; i++) {
     for (let j = 0; j < rows; j++) {
-      let state = grid[i][j];
+      let state = space[i][j];
       // Count live neighbors!
       let sum = 0;
-      let neighbors = countNeighbors(grid, i, j);
+      let neighbors = countNeighbors(space, i, j);
 
       if (state == 0 && neighbors == 3) {
         next[i][j] = 1;
@@ -76,19 +75,19 @@ function draw() {
     }
   }
 
-  grid = next;
+  space = next;
 
 }
 
-function countNeighbors(grid, x, y) {
+function countNeighbors(space, x, y) {
   let sum = 0;
   for (let i = -1; i < 2; i++) {
     for (let j = -1; j < 2; j++) {
       let col = (x + i + cols) % cols;
       let row = (y + j + rows) % rows;
-      sum += grid[col][row];
+      sum += space[col][row];
     }
   }
-  sum -= grid[x][y];
+  sum -= space[x][y];
   return sum;
 }
